@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Hangul</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Hangul</h1>
+            <a href="index.html" class="links">Página Inicial</a>
+            <a id="link-cart" href="#" class="links">
+                <img src="../assets/svg/vista-lateral-vazia-do-carrinho-de-compras.svg" alt="Carrinho">
+                <div class="element hidden"></div>
+            </a>
+
+        </div>
+    </header>
+    <main>
+        <div class="payContainer">
+            <h1>Finalize o seu pedido</h1>
+            <div class="box">
+
+                <form>
+                    <div class="block">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="block">
+                        <label for="lastName">Sobrenome</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div class="block">
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="block">
+                        <label for="number">Número</label>
+                        <input type="number" id="number" required>
+                    </div>
+                    <div class="block">
+                        <label for="mastercard">Mastercard</label>
+                        <input type="radio" name="payment" required>
+                    </div>
+                    <div class="block">
+                        <label for="money">Dinheiro</label>
+                        <input type="radio" name="payment" required>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Finalizar pedido</button>
+                    </div>
+                    <div class="button">
+                        <a href="index.html">Voltar</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <div class="modalContainer modalContainerPayment hidden">
+        <div class="modal">
+            <button class="close close-item">X</button>
+            <div class="paymentEmpty hidden">
+                <p>O carrinho está vazio, nada será feito.</p>
+
+                <div class="buttons errorButtons">
+                    <a href="index.html" id="continue">Voltar a homepage</a>
+                </div>
+            </div>
+
+            <div class="buttons successButtons hidden">
+                <a href="index.html" id="continue">Continuar</a>
+                <a href="index.html" class="close-item">Voltar</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modalContainer modalContainerCart hidden">
+        <div class="modal">
+            <button class="close close-item">X</button>
+            <h1>Seu pedido</h1>
+
+            <div class="hasOrder hidden">
+                <div class="orders"></div>
+                <div class="total">
+                    <h2>Total:</h2>
+                    <h2 id="priceTotal"></h2>
+                </div>
+                <div class="buttons">
+                    <!-- <a href="pagamento.html" id="continue">Continuar</a> -->
+                    <a href="#" class="close-item">Voltar</a>
+                </div>
+            </div>
+            <div class="empty">
+                <p>O carrinho está vazio</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="../js/checkout.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>

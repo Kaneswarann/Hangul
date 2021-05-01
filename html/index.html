@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Hangul</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Hangul</h1>
+            <a href="" class="links">Página Inicial</a>
+            <a id="link-cart" href="#" class="links">
+                <img src="../assets/svg/vista-lateral-vazia-do-carrinho-de-compras.svg" alt="Carrinho">
+                <div class="element hidden"></div>
+            </a>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://www.maangchi.com/wp-content/uploads/2019/11/vegankimchi-insta.jpg');">
+                    </div>
+                    <div class="title">
+                        <h1>Kimchi</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 30,00</p>
+                    </div>
+                    <button id="food-0" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://www.receitop.com/wp-content/uploads/2020/11/receitas-de-japchae-1200x783.jpg')">
+                    </div>
+                    <div class="title">
+                        <h1>Japchae</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 38,00</p>
+                    </div>
+                    <button id="food-1" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://i.pinimg.com/originals/42/bf/77/42bf774c0f6c61987fd7beb17e6b0472.jpg')">
+                    </div>
+                    <div class="title">
+                        <h1>Karee</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 32,00</p>
+                    </div>
+                    <button id="food-2" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://media.istockphoto.com/photos/tteokbokki-with-eggs-in-gray-bowl-on-concrete-table-top-tteokbokki-is-picture-id1253629795?k=6&m=1253629795&s=612x612&w=0&h=gbHUJQQQa8KVRPEQi-98JvrLtx9wPF7GlkNIQD6hj9s=')">
+                    </div>
+                    <div class="title">
+                        <h1>Tteokbokki</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 49,90</p>
+                    </div>
+                    <button id="food-3" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://img.itdg.com.br/tdg/images/recipes/000/068/026/303167/303167_original.jpg?mode=crop&width=710&height=400')">
+                    </div>
+                    <div class="title">
+                        <h1>Harumaki de Camarão</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 19,80</p>
+                    </div>
+                    <button id="food-4" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://www.djapa.com.br/wp-content/uploads/2020/03/harumaki.jpg')">
+                    </div>
+                    <div class="title">
+                        <h1>Harumaki de Frango</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 18,80</p>
+                    </div>
+                    <button id="food-5" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://e7nymd233vm.exactdn.com/wp-content/uploads/2017/06/KIMBAP-CAPA.jpg')">
+                    </div>
+                    <div class="title">
+                        <h1>Kimbap</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 28,00</p>
+                    </div>
+                    <button id="food-6" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <div class="bg-image"
+                        style="background-image: url('https://www.spoonforkbacon.com/wp-content/uploads/2021/03/Jajangmyeon-recipe-card-500x500.jpg')">
+                    </div>
+                    <div class="title">
+                        <h1>Jajangmyeon</h1>
+                    </div>
+                    <div class="price">
+                        <p>R$ 38,00</p>
+                    </div>
+                    <button id="food-7" class="add-cart">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modalContainer modalContainerCart hidden">
+        <div class="modal">
+            <button class="close close-item">X</button>
+            <h1>Seu pedido</h1>
+
+            <div class="hasOrder hidden">
+                <div class="orders"></div>
+                <div class="total">
+                    <h2>Total:</h2>
+                    <h2 id="priceTotal"></h2>
+                </div>
+                <div class="buttons">
+                    <a href="pagamento.html" id="continue">Continuar</a>
+                    <a href="#" class="close-item">Voltar</a>
+                </div>
+            </div>
+            <div class="empty">
+                <p>O carrinho está vazio</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>
